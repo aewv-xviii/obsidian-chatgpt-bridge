@@ -1,0 +1,18 @@
+{
+  "name": "obsidian-chatgpt-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Desktop-only Obsidian plugin that exposes a localhost API for controlled vault operations.",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "esbuild": "^0.25.11",
+    "obsidian": "^1.8.10",
+    "typescript": "^5.9.3"
+  }
+}
+
