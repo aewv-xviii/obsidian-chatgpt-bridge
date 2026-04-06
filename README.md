@@ -70,4 +70,13 @@ For development, you can symlink the project folder into:
 
 `<your-vault>\.obsidian\plugins\obsidian-chatgpt-bridge`
 
-# obsidian-chatgpt-bridge
+## Git clone install
+
+If you want to install this plugin by `git clone` directly into `.obsidian/plugins/obsidian-chatgpt-bridge`, the repository must contain a built `main.js`.
+
+Obsidian can discover a plugin from `manifest.json`, but it cannot activate the plugin unless `main.js` exists in the same folder.
+
+Two valid approaches:
+
+- Commit `main.js` to the repository and clone it directly into the plugins folder
+- Clone the source repo, then run `npm install` and `npm run build` inside the cloned folder before enabling it
