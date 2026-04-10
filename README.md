@@ -1,4 +1,4 @@
-# ChatGPT Bridge
+# AI Agent Bridge
 
 Desktop-only Obsidian plugin that exposes an authenticated localhost HTTP API for vault operations.
 
@@ -12,7 +12,7 @@ Desktop-only Obsidian plugin that exposes an authenticated localhost HTTP API fo
 - Moves or renames files and folders
 - Trashes files and folders when destructive actions are enabled
 
-The API is intentionally local-only and token-protected. It is a good foundation for a later MCP server or ChatGPT App bridge.
+The API is intentionally local-only and token-protected. It is a good foundation for a later MCP server or AI Agent App bridge.
 
 ## Endpoints
 
@@ -51,7 +51,7 @@ Invoke-RestMethod `
   -Uri "http://127.0.0.1:27124/vault/write" `
   -Headers $headers `
   -ContentType "application/json" `
-  -Body '{"path":"Inbox/test.md","content":"hello from ChatGPT","overwrite":true}'
+  -Body '{"path":"Inbox/test.md","content":"hello from Agent","overwrite":true}'
 ```
 
 ## Development
@@ -68,11 +68,11 @@ Then copy these files into your vault plugin folder:
 
 For development, you can symlink the project folder into:
 
-`<your-vault>\.obsidian\plugins\obsidian-chatgpt-bridge`
+`<your-vault>\.obsidian\plugins\obsidian-ai-agent-bridge`
 
 ## Git clone install
 
-If you want to install this plugin by `git clone` directly into `.obsidian/plugins/obsidian-chatgpt-bridge`, the repository must contain a built `main.js`.
+If you want to install this plugin by `git clone` directly into `.obsidian/plugins/obsidian-ai-agent-bridge`, the repository must contain a built `main.js`.
 
 Obsidian can discover a plugin from `manifest.json`, but it cannot activate the plugin unless `main.js` exists in the same folder.
 
